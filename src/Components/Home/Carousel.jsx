@@ -7,17 +7,17 @@ import { useTranslation } from "react-i18next";
 
 const Carousel = ({ data }) => {
   const apiUrl = import.meta.env.VITE_API_URL;
- 
+
   if (!Array.isArray(data) || data.length === 0) {
     return null;
   }
- 
+
   const initialSlide = data.findIndex((slide) => slide.serial === 1);
   const [currentSlide, setCurrentSlide] = useState(
     initialSlide >= 0 ? initialSlide : 0
   );
   const { t } = useTranslation();
- 
+
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
   };
@@ -25,11 +25,11 @@ const Carousel = ({ data }) => {
   const prevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + data.length) % data.length);
   };
- 
+
   useEffect(() => {
-    const interval = setInterval(nextSlide, 4000); 
+    const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
-  }, []); 
+  }, []);
 
   return (
     <div className="mainCarousel">
@@ -41,16 +41,16 @@ const Carousel = ({ data }) => {
           />
         </div>
         <div className="carousel-content">
-        
-          <div className="carousel-background"> 
+          <div className="carousel-background">
             {data[currentSlide]?.image && (
               <img
                 src={apiUrl + data[currentSlide].image}
                 alt="Hero Banner"
                 className="carousel-lcp-image"
-                fetchPriority="high" 
-                width="1920"   
-                height="600"   
+                // fetchPriority="high"
+                fetchpriority="high"
+                width="1920"
+                height="600"
                 style={{
                   width: "100%",
                   height: "100%",

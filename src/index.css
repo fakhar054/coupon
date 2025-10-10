@@ -1,107 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-* {
-  font-family: "Open Sans", sans-serif;
+@font-face {
+  font-family: "Open Sans";
+  src: url("/font/open-sans-v44-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Open Sans Light (300) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-} */
-
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* Open Sans Regular (400) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-} */
-
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* Open Sans Medium (500) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-} */
-/* 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../public/fonts/OpenSans-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-} */
+  font-family: "Open Sans";
+  src: url("/font/open-sans-v44-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* Open Sans SemiBold (600) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-} */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/font/sans_open.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* Open Sans Bold (700) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-} */
-
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* Open Sans ExtraBold (800) */
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-} */
-
-/* @font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-} */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
