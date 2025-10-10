@@ -60,8 +60,8 @@ function App() {
     <>
       {/* <ScrollToTop /> */}
       <Navbar logo={logo} />
-      {/* <Outlet />
-      <Footer
+      <Outlet />
+      {/*  <Footer
         footerLogo={footerLogo}
         footer={footer}
         footerSocialLinks={footerSocialLinks}
