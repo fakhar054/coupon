@@ -56,8 +56,8 @@ function App() {
   //   }, []);
 
   useEffect(() => {
-    fetchSettings();
-    fetchCustomPages();
+    // fetchSettings();
+    // fetchCustomPages();
   });
 
   const fetchSettings = async () => {
@@ -104,7 +104,7 @@ function App() {
     <>
       {/* <ScrollToTop /> */}
       <Navbar logo={logo} />
-      {/* <Outlet /> */}
+      <Outlet />
       <Footer
         footerLogo={footerLogo}
         footer={footer}
