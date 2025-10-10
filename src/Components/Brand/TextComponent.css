@@ -1,0 +1,19 @@
+.text-component {
+    color: #333;
+    margin-left: 75px;
+  }
+  
+  .text-component h3 {
+    font-size: 1.12em;
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+    font-weight: 600; 
+  }
+  
+  .text-component p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+  }
+  
+ 

@@ -1,0 +1,36 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logocontainer{
+    padding: 0;
+    height: 45px;
+    color: white;
+}
+.atag{
+    gap: 10px;
+    text-decoration: none;
+    color: var(--primary);
+    width: 180px;
+    height: 45px;
+}
+
+.atag img{
+    width: 100%;
+    height: auto;
+}
+
+.back{
+    gap: 0px;
+}
+.icon{
+    
+    font-size: 26px;
+}
+
+.back:hover{
+    color: black;
+}

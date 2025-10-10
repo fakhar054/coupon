@@ -1,0 +1,44 @@
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: #FFFF;
+  border: 1px solid #eff2f4;
+  margin: 40px 0px;
+  min-height: 200px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 12px;
+  width: 270px;
+}
+
+
+.stat-card i { 
+  color: var(--primary);
+  font-size: 40px;
+  line-height: 40px;  
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.stat-card .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--primary);
+}
+
+.stat-card .text {
+  font-size: 14px;
+  color: #333; 
+}
+
+@media (max-width: 992px) {
+  .stats-section {
+    display: none;
+  }
+}

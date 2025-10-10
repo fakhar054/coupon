@@ -1,0 +1,10 @@
+# Allow all crawlers to index everything
+User-agent: *
+Disallow:
+
+# Example: block admin or private folders
+# User-agent: *
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.meinespar.de/sitemap.xml

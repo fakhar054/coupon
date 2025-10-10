@@ -1,0 +1,67 @@
+.singleCardMobile .card_bdy{
+    display: none;
+}
+
+.secondCardMobile a .second-card{
+    display: none;
+}
+
+.similarStoresMobile .similar-stores{
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .singleCardMobile .card_bdy{
+        display: block;
+        width: 88%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .secondCardMobile a .second-card{
+        display: block;
+        width: 88%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .similarStoresMobile .similar-stores{
+        display: block;
+        width: 88%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .similarStoresMobile .similar-stores h3 {
+        text-align: center;
+        font-size: 1.7rem;
+        color: var(--primary);
+        margin: 20px 0px;
+    }
+
+    .similarStoresMobile .similar-stores .tags-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .similarStoresMobile .similar-stores .tags-container .store-tag{
+        width: 22%;
+    }
+ }
+
+ @media (max-width: 576px) {
+    .singleCardMobile .card_bdy {
+    width: 94%;
+    }
+    .secondCardMobile a .second-card{
+    width: 94%;
+    }
+    .similarStoresMobile .similar-stores {
+    width: 94%;
+    }
+    .similarStoresMobile .similar-stores .tags-container .store-tag {
+        width: 31%;
+    }
+    .singleCardMobile .card_bdy .cd_bt{
+    width: fit-content !important;
+        }
+ }

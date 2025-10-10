@@ -1,0 +1,119 @@
+ 
+
+.mainStoreLogo {
+  background-color: #f5f5f5;
+}
+
+.card-store-section {
+  text-align: center;
+  margin: auto;
+  padding: 20px 60px;
+}
+
+.card-store-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.card-store-container {
+  display: flex;  
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.store-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  width: 166px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-logo:hover {
+  transform: scale(1.05);
+}
+
+.store-logo-image {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.store-logo p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.store-logo-button {
+  font-size: 16px;
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+ 
+@media (max-width: 992px) {
+  .card-store-section {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-store-section {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .store-logo {
+    width: 150px;
+}
+}
+
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  padding: 7px 10px;
+  margin: 0 6px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: var(--btn-primary-hover); 
+}
+
+.pagination-btn:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+}
+
+.previous-btn {
+  background-color: var(--primary); 
+}
+
+.next-btn {
+  background-color: var(--primary); 
+}

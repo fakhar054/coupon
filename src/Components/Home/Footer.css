@@ -1,0 +1,151 @@
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2532;
+  color: #ffffff;
+  padding: 30px 20px 20px 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+ 
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section ul li a {
+  color: #00bcd4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a .icon {
+  margin-left: 5px;
+}
+
+ 
+
+.footer-logo-section {
+  text-align: left;
+}
+
+.footer-logo-section .footer-logo {
+  max-width: 142px;
+  height: auto;
+}
+.footer-logo-section ul li span{
+  font-size: 16px !important;
+  margin-bottom: 5px;
+}
+.footer-logo-section ul li span svg{
+  font-size: 19px;
+}
+
+.footer-icons {
+  display: flex;
+  margin: 17px 0px 26px 0px;
+  gap: 25px;
+}
+
+.footer-icons a i { 
+  font-size: 26px;
+}
+
+.footer-icons a i:hover {
+  color: #00bcd4;
+  transition: color 0.3s;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #00bcd4;
+  text-decoration: none;
+}
+ 
+@media screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .footer-icons a{
+    color: white;
+  }
+
+  .footer-links {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .footer-links a {
+    margin: 5px 0;
+  }
+
+  .footer-flags div {
+    justify-content: center;
+  }
+
+  .footer-flags img {
+    margin-right: 5px;
+  }
+
+  .footer-section ul li {
+    justify-content: center;
+  }
+
+  .footer-section ul li a {
+    justify-content: center;
+  }
+
+  .footer-section ul li a .icon {
+    margin-left: 5px;
+  }
+}
+
+.footer-end {
+  background-color: #14171F;
+  color: #ffffff; 
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

@@ -1,0 +1,45 @@
+.image-hover-container {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px 20px 50px 20px;
+}
+.image-container{
+  width: 180px;
+  height: 45px;
+}
+.image-hover-container h2{
+  color: var(--primary);
+}
+.image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hover-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+  filter: grayscale(0%);
+}
+ 
+.partner-logo {
+  width: 100%;  
+  object-fit: contain;
+  height: 100%;
+}
+
+
+ 
+@media (max-width: 576px) {
+  .image-grid {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .image-container {
+    width: 66px;
+  }
+}

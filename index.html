@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meinespar</title>
+
+    <!-- 1123 Preconnects for critical origins -->
+    <link rel="preconnect" href="https://admin.meinespar.de" />
+    <link rel="preconnect" href="https://cdn.cookie-script.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-19-24-7220.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-22-05-5933.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-20-47-4436.png"
+    />
+    <!-- Critical CSS preload + non-blocking -->
+    <link rel="preload" href="/assets/index-ChR1WZN1.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="/assets/index-ChR1WZN1.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/index-ChR1WZN1.css" />
+    </noscript>
+
+    <link
+      rel="preload"
+      href="/assets/index-C88oHRKW.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/index-C88oHRKW.css" />
+    </noscript>
+
+    <!-- Fonts preload -->
+    <!-- <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/OpenSans-Medium.ttf" as="font" type="font/ttf" crossorigin> -->
+
+    <!-- FontAwesome optimization -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Critical inline styles -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Add other above-the-fold critical CSS here */
+    </style>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CQ66DXXLHR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CQ66DXXLHR");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-MQCF53DQ"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MQCF53DQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Main React entry -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

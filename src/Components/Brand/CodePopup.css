@@ -1,0 +1,178 @@
+.code-popup-overlay {
+  position: absolute; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  }
+  
+  .code-popup-content {
+    background: white;
+    width: 550px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .code-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .code-popup-close svg {
+    font-size: 24px;
+  }
+  
+  .code-popup-header {
+    text-align: center;
+    width: 250px !important;
+    height: 130px !important;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .code-popup-header img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+  }
+  
+  .code-popup-body {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .code-popup-body p {
+    font-size: 1.2em;
+  }
+  
+  .code-input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  .code-code-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    flex-grow: 1;
+  }
+  
+  .code-copy-button {
+    padding: 10px;
+    background-color: #00c4cc;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .code-copy-button svg {
+    margin-right: 5px;
+  }
+  
+  .code-copy-button:hover {
+    background-color: #06cfd6;
+  }
+  
+  .code-popup-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #00c4cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .code-popup-button:hover {
+    background-color: #06cfd6;
+  }
+  
+  
+  
+  .code-popup-conditions {
+    text-align: left;
+    padding: 0px 20px;
+  }
+  .code-popup-conditions h3 {
+    font-size: 1.2em !important;  
+  }
+
+  .code-popup-conditions ul {
+    padding-left: 0 !important;
+  }
+  
+  .code-popup-conditions ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  } 
+  .code-popup-conditions ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .code-popup-conditions ul li svg {
+    margin-right: 8px;
+    color: #27ae60 !important; 
+  }
+  
+  .code-popup-footer {
+    height: 130px;
+    padding: 20px;
+    background-color: #0d2940;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+  }
+   
+  
+  .code-activate-button {
+    display: inline-block; 
+    padding: 6px 10px;  
+    background-color: var(--btn-primary-hover);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    border: #3596C4;
+  }
+  
+  .code-activate-button:hover { 
+    background-color: var(--primary);
+  }
+  

@@ -1,0 +1,37 @@
+.second-card {
+    background-color: #d3f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 20px 0px 0px 75px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .second-card h3 {
+    color: var(--btn-primary-hover);
+    font-size: 1.25em;
+    margin-bottom: 8px;
+  }
+  
+  .second-card p {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .see-offers-button {
+    background-color: #ffd966;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .see-offers-button:hover {
+    background-color: #ffbf00;
+  }
+  

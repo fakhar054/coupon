@@ -1,0 +1,73 @@
+ 
+
+
+   .main-coupon {
+  position: relative; 
+  background-color: #f5f5f5; 
+}
+
+.coupon-type-container {
+  overflow: hidden;  
+  white-space: nowrap;  
+  margin: 0 30px;  
+}
+
+.coupon-type {
+  display: inline-flex;  
+  transition: transform 0.3s ease;
+}
+
+.coupon-button {
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 0px 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--btn-primary-hover);
+  background-color: #fff;
+  border: 2px solid var(--btn-primary-hover);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.coupon-button:hover {
+  background-color: #ddd;
+}
+
+.coupon-button.selected {
+  background-color: var(--btn-primary-hover);
+  color: #fff;
+  border-color: var(--btn-primary-hover);
+}
+
+.coupon-button.selected:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.scroll-button {
+  visibility: hidden;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1; 
+}
+
+.scroll-button.left {
+  left: 0; 
+}
+
+.scroll-button.right {
+  right: 0; 
+}
+
+.scroll-button:hover {
+  background-color: #ddd;
+}

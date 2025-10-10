@@ -1,0 +1,241 @@
+.mainCarousel{
+  background-color: #F5F5F5 !important;  
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  font-size: 2em;
+  color: #000;
+  user-select: none;
+  z-index: 10;
+}
+
+.carousel-content {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-background {
+  width: 70%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-logo {
+  position: absolute;
+  top: 50%;
+  right: -52px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out; 
+  transform-origin: center; 
+}
+
+.carousel-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.carousel-text {
+  width: 30%;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-description {
+  text-align: center;
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.carousel-description .header,
+.carousel-description .percentage,
+.carousel-description .description,
+.carousel-description button {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.carousel-description .header {
+  margin: 0;
+  font-size: 1.2em; 
+}
+
+.carousel-description .percentage {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+
+.carousel-description .description {
+  margin: 0;
+  font-size: 0.8em;
+  width: 95%;
+}
+
+.carousel-description button {
+  margin-top: 10px;
+  padding: 5px 5px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+  border: 1px solid white;
+}
+
+.carousel-arrow.left {
+  position: absolute;
+  left: 0;
+}
+
+.carousel-arrow.right {
+  position: absolute;
+  right: 0;
+}
+.left .faleft:hover{
+  color: var(--btn-primary-hover) !important; 
+}
+.right .faright:hover{
+  color: var(--btn-primary-hover) !important; 
+}
+
+
+@media (min-width: 991px) {
+  .carousel:hover .carousel-logo {
+    transform: scale(1.1); 
+    transform-origin: center; 
+  }
+
+  .carousel:hover .carousel-description .header,
+  .carousel:hover .carousel-description .percentage,
+  .carousel:hover .carousel-description .description,
+  .carousel:hover .carousel-description button {
+    transform: scale(1.1); 
+  }
+}
+@media (max-width: 767px) {
+  .carousel {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .carousel-background {
+    width: 100%; 
+  }
+
+  .carousel-logo {
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    transform: none;
+    width: 80px;
+    height: 80px;
+  }
+
+  .carousel-logo img {
+    width: 100%; 
+  }
+
+  .carousel-text { 
+    width: 45%;
+    background-color: var(--primary);
+    padding: 10px;
+    text-align: left;
+  }
+
+  .carousel-description {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .carousel-description .header {
+    font-size: 1em;
+  }
+
+  .carousel-description .percentage { 
+    font-size: 1.5em;
+  }
+
+  .carousel-description .description {
+    display: none;
+  }
+
+  .carousel-description button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+ 
+  .carousel-arrow.left, .carousel-arrow.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+
+  .carousel-arrow.left {
+    left: 10px;
+  }
+
+  .carousel-arrow.right {
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .carousel-content{
+    flex-direction: column;
+  }
+  .carousel-text {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .carousel-description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  
+    .carousel-description button {
+      margin: 0;
+      display: none;
+    }
+  .carousel-background {
+      height: 143px;
+    }
+  .carousel-logo {
+    height: 70px;
+    width: 70px;
+    top: 86%;
+  }
+  .carousel-description .header {
+  font-size: 1.1em !important;
+  }
+  }

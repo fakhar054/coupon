@@ -1,0 +1,73 @@
+.main-class-logocard .main-aside{
+  margin: 0px;
+  display: none;
+}
+.main-class-logocard .main-aside .logo-card{
+  width: 300px;
+  margin: auto;
+}
+
+.brand-info {
+  padding-top: 38px;
+  width: 88%;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-right: 75px;
+}
+
+.brand-info .bd-img {
+  max-width: 200px;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.brand-info .bd-img img{
+  width: 100%;
+  height: auto;
+}
+
+
+.brand-info h1 {
+  font-size: 1.5rem;
+} 
+@media (max-width: 992px) { 
+  .brand-info {
+    margin-right: auto;
+    justify-content: center;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .main-class-logocard .main-aside{
+    display: block;
+  } 
+
+}
+
+@media (max-width: 576px) {
+  .brand-info {
+    /* width: 94%; */
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .brand-info .bd-img {
+    display: block;
+    width: 175px;
+    padding: 10px;
+  }
+  .brand-info h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+.brand-info p{
+  margin-bottom: 0px;
+}
+.main-class-logocard .main-aside .logo-card{
+  width: 75%;
+}
+.main-class-logocard .main-aside{
+  display: none;
+}
+}
