@@ -2,32 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link id="favicon" rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meinespar</title>
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/vite.svg" />
 
-    <!-- 1123 Preconnects for critical origins -->
-    <link rel="preconnect" href="https://admin.meinespar.de" />
-    <link rel="preconnect" href="https://cdn.cookie-script.com" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <!-- 🔹 Preconnects for faster DNS & TLS -->
+    <link rel="preconnect" href="https://admin.meinespar.de" crossorigin />
+    <link rel="preconnect" href="https://cdn.cookie-script.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://www.google-analytics.com"
+      crossorigin
+    />
 
+    <!-- 🔹 Preload hero images (LCP improvement) -->
     <link
       rel="preload"
       as="image"
-      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-19-24-7220.png"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-19-24-7220.webp"
+      imagesrcset="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-19-24-7220.webp"
+      type="image/webp"
     />
     <link
       rel="preload"
       as="image"
-      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-22-05-5933.png"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-22-05-5933.webp"
+      type="image/webp"
     />
     <link
       rel="preload"
       as="image"
-      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-20-47-4436.png"
+      href="https://admin.ttourup.com/uploads/custom-images/slider-2025-04-03-02-20-47-4436.webp"
+      type="image/webp"
     />
-    <!-- Critical CSS preload + non-blocking -->
+
+    <!-- 🔹 Critical CSS preload -->
     <link rel="preload" href="/assets/index-ChR1WZN1.css" as="style" />
     <link
       rel="stylesheet"
@@ -49,10 +63,7 @@
       <link rel="stylesheet" href="/assets/index-C88oHRKW.css" />
     </noscript>
 
-    <!-- Fonts preload -->
-    <!-- <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/OpenSans-Medium.ttf" as="font" type="font/ttf" crossorigin> -->
-
+    <!-- 🔹 Font optimization -->
     <link
       rel="preload"
       href="/font/sans_open.woff2"
@@ -61,7 +72,24 @@
       crossorigin
     />
 
-    <!-- FontAwesome optimization -->
+    <!-- Optional Google Fonts (modern load) -->
+    <!--
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    -->
+
+    <!-- 🔹 FontAwesome async -->
     <link
       rel="preload"
       as="style"
@@ -80,23 +108,21 @@
       />
     </noscript>
 
-    <!-- Critical inline styles -->
+    <!-- 🔹 Inline critical styles -->
     <style>
       body {
         margin: 0;
         font-family: "Open Sans", Arial, sans-serif;
-        /* font-family: "Open Sans", sans-serif; */
+        font-display: swap;
+        background-color: #fff;
       }
-
       .header {
         display: flex;
         align-items: center;
       }
-
-      /* Add other above-the-fold critical CSS here */
     </style>
 
-    <!-- Google Analytics -->
+    <!-- 🔹 Defer analytics to avoid render blocking -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-CQ66DXXLHR"
@@ -106,19 +132,20 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-CQ66DXXLHR");
+      window.addEventListener("load", () => {
+        gtag("js", new Date());
+        gtag("config", "G-CQ66DXXLHR");
+      });
     </script>
 
-    <!-- Google Tag Manager -->
+    <!-- 🔹 Defer Google Tag Manager -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtm.js?id=GTM-MQCF53DQ"
     ></script>
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-MQCF53DQ"
@@ -128,10 +155,9 @@
       ></iframe>
     </noscript>
 
-    <!-- React root -->
     <div id="root"></div>
 
-    <!-- Main React entry -->
+    <!-- 🔹 Entry point (Vite handled, cache-busted) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
