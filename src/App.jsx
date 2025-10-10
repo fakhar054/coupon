@@ -56,9 +56,9 @@ function App() {
   //   }, []);
 
   useEffect(() => {
-    // fetchSettings();
-    // fetchCustomPages();
-  });
+    fetchSettings();
+    fetchCustomPages();
+  }, []);
 
   const fetchSettings = async () => {
     try {
