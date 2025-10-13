@@ -1,8 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook, FaEnvelope } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { BsBoxArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";

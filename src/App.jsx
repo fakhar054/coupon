@@ -14,46 +14,8 @@ function App() {
   const [favicon, setFavicon] = useState("");
   const [footer, setFooter] = useState("");
   const [footerSocialLinks, setFooterSocialLinks] = useState([]);
-  const [themeColors, setThemeColors] = useState();
+  // const [themeColors, setThemeColors] = useState();
   const [customPages, setCustomPages] = useState([]);
-  //   useEffect(() => {
-  //     axios
-  //       .get(`${apiUrl}api/settings`)
-  //       .then((response) => {
-  //         const { logo, footer_logo, favicon, theme_one, theme_two } =
-  //           response.data.setting;
-  //         const { footer } = response.data;
-  //         const { footerSocialLinks } = response.data;
-  //         setFooterSocialLinks(footerSocialLinks);
-  //         setFooter(footer);
-  //         setLogo(logo);
-  //         setFooterLogo(footer_logo);
-  //         setFavicon(favicon);
-  //         setThemeColors({ themeOne: theme_one, themeTwo: theme_two });
-
-  //         document.documentElement.style.setProperty("--primary", theme_one);
-  //         document.documentElement.style.setProperty(
-  //           "--btn-primary-hover",
-  //           theme_two
-  //         );
-  //         if (favicon) {
-  //           const faviconLink = document.getElementById("favicon");
-  //           if (faviconLink) {
-  //             faviconLink.href = `${apiUrl}${favicon}`;
-  //           }
-  //         }
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error fetching settings:", error);
-  //       });
-  //   }, []);
-
-  //   useEffect(() => {
-  //     fetch(`${apiUrl}api/custom-pages`)
-  //       .then((response) => response.json())
-  //       .then((data) => setCustomPages(data))
-  //       .catch((error) => console.error("Error fetching custom pages:", error));
-  //   }, []);
 
   useEffect(() => {
     fetchSettings();
@@ -73,7 +35,7 @@ function App() {
       setFavicon(favicon);
       setFooter(footer);
       setFooterSocialLinks(footerSocialLinks);
-      setThemeColors({ themeOne: theme_one, themeTwo: theme_two });
+      // setThemeColors({ themeOne: theme_one, themeTwo: theme_two });
 
       document.documentElement.style.setProperty("--primary", theme_one);
       document.documentElement.style.setProperty(

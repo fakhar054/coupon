@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import "./Navbar.css";
 
 import { useTranslation } from "react-i18next";
