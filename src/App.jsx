@@ -14,7 +14,6 @@ function App() {
   const [favicon, setFavicon] = useState("");
   const [footer, setFooter] = useState("");
   const [footerSocialLinks, setFooterSocialLinks] = useState([]);
-  // const [themeColors, setThemeColors] = useState();
   const [customPages, setCustomPages] = useState([]);
 
   useEffect(() => {
@@ -35,7 +34,6 @@ function App() {
       setFavicon(favicon);
       setFooter(footer);
       setFooterSocialLinks(footerSocialLinks);
-      // setThemeColors({ themeOne: theme_one, themeTwo: theme_two });
 
       document.documentElement.style.setProperty("--primary", theme_one);
       document.documentElement.style.setProperty(
