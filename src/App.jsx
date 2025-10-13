@@ -6,7 +6,6 @@ import Footer from "./Components/Home/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Outlet } from "react-router-dom";
-import ScrollToTop from "./Components/Home/ScrollToTop";
 function App() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const [logo, setLogo] = useState("");
@@ -62,7 +61,6 @@ function App() {
 
   return (
     <>
-      {/* <ScrollToTop /> */}
       <Navbar logo={logo} />
       <Outlet />
       <Footer

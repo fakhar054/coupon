@@ -85,9 +85,7 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./../App";
-import HomePage from "../pages/HomePage"; // ✅ Keep this direct (critical for speed)
-
-// ✅ Lazy load all other pages
+import HomePage from "../pages/HomePage";
 const BrandPage = lazy(() => import("../pages/BrandPage"));
 const CategoryPage = lazy(() => import("../pages/CategoryPage"));
 const StorePage = lazy(() => import("../pages/StorePage"));
@@ -100,7 +98,6 @@ const TermsCondition = lazy(() =>
 );
 const CustomPage = lazy(() => import("../pages/CustomPage.jsx"));
 
-// ✅ Custom Loader (use your existing Loader component if you have one)
 const Loader = () => <div className="page-loader">Loading...</div>;
 
 const router = createBrowserRouter([
@@ -108,10 +105,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      // 🏠 Home page (direct import)
       { path: "", element: <HomePage /> },
 
-      // 💤 Lazy loaded pages
       {
         path: "gutscheine/:brandName",
         element: (

@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import axios from "axios";
 import CarouselComponent from "../Components/Home/CarouselComponent";
 import Carousel from "../Components/Home/Carousel";
@@ -7,7 +7,11 @@ import CardComponent from "../Components/Home/CardComponent";
 import Categories from "../Components/Home/Categories";
 import StatsSection from "../Components/Home/StatsSection";
 import PromiseComponent from "../Components/Home/PromiseComponent";
-import CardLogoSection from "../Components/Home/CardLogoSection";
+// import CardLogoSection from "../Components/Home/CardLogoSection";
+const CardLogoSection = lazy(() =>
+  import("../Components/Home/CardLogoSection")
+);
+
 import ImageHover from "../Components/Home/ImageHover";
 
 export default function HomePage() {
@@ -71,7 +75,11 @@ export default function HomePage() {
       {data.homepageBannerOne && (
         <PromiseComponent data={data.homepageBannerOne} />
       )}
-      <CardLogoSection data={data.storesCoupons} />
+      {/* <CardLogoSection data={data.storesCoupons} /> */}
+      <Suspense fallback={<div>Loading stores...</div>}>
+        <CardLogoSection data={data.storesCoupons} />
+      </Suspense>
+
       <ImageHover data={data.partners} />
     </>
   );
